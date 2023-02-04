@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url(img/background.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    width: 550px;
+}
+
+.credits a {
+    color: white;
+}
+
+.credits {
+    margin: 16px;
+}
+
+.logo {
+    background: rgba(0, 0, 0, 0.5);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 240px;
+    font-family: Norse-Bold, sans-serif;
+    font-size: 130px;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 400px;
+    font-size: 25px;
+}
+
+strong p:first-child {
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+strong p:last-child {
+    margin-bottom: 50px;
+}
+
+.title,
+.account {
+    background-color: rgb(238, 237, 236);
+}
+
+.title,
+.forms,
+.account {
+    padding-left: 50px;
+}
+
+.forms {
+    height: 300px;
+    flex-flow: wrap;
+    margin-right: 400px;
+}
+
+.form-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.forms form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    margin: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+label {
+    width: 80px;
+}
+
+input {
+    margin-right: 50px;
+    appearance: none;
+    border: #E5E7EB solid 1px;
+}
+
+input:focus {
+    border: 2px solid rgb(131, 131, 235);
+    box-shadow: 2px 2px 15px rgb(151, 149, 149);
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 30px;
+    gap: 30px;
+    font-weight: 700;
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    color: white;
+    padding: 16px 32px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.account div a {
+    color: #596D48;
+}
+
+button[type="submit"]:active {
+    box-shadow: 5px 5px 50px rgb(85, 80, 80);
+}
