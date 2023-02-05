@@ -88,7 +88,8 @@ strong p:last-child {
 .forms {
     height: 300px;
     flex-flow: wrap;
-    margin-right: 400px;
+    padding-right: 400px;
+    box-shadow: 0px 3px 10px rgb(83, 83, 83);
 }
 
 .form-title {
