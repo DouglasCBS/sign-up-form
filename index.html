@@ -29,7 +29,7 @@
             </strong>
         </div>
         <div class="forms">
-            <form action="" method="post">
+            <form id="my-form" action="" method="post" onsubmit="return checkPassword()">
                 <div class="form-title">Let's do this!</div>
                 <div>
                     <label for="first_name">First Name:</label>
@@ -51,9 +51,10 @@
                     <label for="confirm-password">Confirm Password:</label>
                     <input required type="password" id="confirm-password">
                 </div>
+                <div class="message"></div>
                 <div class="account">
-                    <button type="submit">Create Account</button>
-                    <div>Already have an account? <a href="#">Log In</a></div>
+                    <button type="submit" form="my-form">Create Account</button>
+                    <div><p>Already have an account? <a href="#">Log In</a></p></div>
                 </div>
             </form>
         </div>
